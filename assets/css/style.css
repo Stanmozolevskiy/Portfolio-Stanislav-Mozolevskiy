@@ -1,21 +1,17 @@
-
 #logo {
     font-size: 2em;
     margin-left: 10%;
     font-family: 'Parisienne', cursive;
     width: 70%;
 }
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
-
 main {
     flex: 1 0 auto;
 }
-
 .avatar {
     max-width: 300px;
    max-height: 200px;
@@ -25,11 +21,9 @@ main {
     margin-right: auto;
     margin-bottom: 20px;
 }
-
 .header {
     font-family: 'Convergence', sans-serif;
 }
-
 hr.style-four {
     padding: 0;
     border: none;
@@ -41,13 +35,10 @@ p {
     line-height: 150%;
     margin-bottom: 40px;
 }
-
-
 .copy {
     margin-bottom: 20px;
     opacity: 0.6 ;
 }
-
 .icon {
     color: white;
     opacity: .7;
@@ -60,8 +51,8 @@ p {
     height: 500px;;
 }
 .carousel .carousel-item {
-    width:400px !important;}
-
+    width:400px !important;
+}
 .carousel {
     margin-bottom: 30px;
 }    
@@ -71,11 +62,54 @@ p {
 .contactIcon {
     margin: 15px;
 }
-
 #fixedNav {
     opacity: .8;
 }
-
 .train {
     color: black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  height:50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+ /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip .wide{
+    visibility: hidden;
+    width: 200px;
+    height:50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+   /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+.tooltip:hover .wide{
+  visibility: visible;
 }
